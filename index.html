@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zjigguj Adres</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+</head>
+
+<body>
+
+    <div class="top">
+        <h1>Zjigguj adres Turczyna</h1>
+        <p>Wystarczy jeden przycisk ;p</p>
+    </div>
+
+    <div class="top-part">
+        <label for="input">Ilość generowanych adresów</label>
+        <input  name="input" class="input">
+        <button class="btngenerate" id="generateBtn">Generuj Adresy</button>
+        <p class="error"></p>
+    </div>
+  
+    <div>
+        <table class="styled-table" id="tbl_exporttable_to_xls" border="1">
+            <thead>
+                <tr>
+                    <th>PROFILE</th>
+                    <th>ShippingCity</th>
+                    <th>ShippingFirstName</th>
+                    <th>ShippingLastName</th>
+                    <th>ShippingStreet</th>
+                    <th>ShippingAdditional</th>
+                    <th>ShippingZip</th>
+                    <th>SameBilling</th>
+                    <th>BillingCity</th>
+                    <th>BillingFirstName</th>
+                    <th>BillingLastName</th>
+                    <th>BillingStreet</th>
+                    <th>BillingAdditional</th>
+                    <th>BillingZip</th>
+                    <th>PhoneNumber</th>
+                    <th>Webhook</th>
+                </tr>
+            </thead>
+            <tbody class="table">
+                <!-- <tr>
+                <td id="profile">Test1</td>
+                <td id="city">Abramowice Prywatne</td>
+                <td id="name">Błażej</td>
+                <td id="lastName">Turczyn</td>
+                <td id="street">Słoneczna 17</td>
+                <td></td>
+                <td id="zip">20-338</td>
+                <td id="sameBilling">true</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+
+            <tr>
+                <td id="profile">Test1</td>
+                <td id="city">Abramowice Prywatne</td>
+                <td id="name">Błażej</td>
+                <td id="lastName">Turczyn</td>
+                <td id="street">Słoneczna 17</td>
+                <td></td>
+                <td id="zip">20-338</td>
+                <td id="sameBilling">true</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr> -->
+
+            <tbody>
+        </table>
+    </div>
+    <div class="button-container">
+        <button onclick="ExportToExcel('csv')" class="exportBtn" id="btnExport">Export</button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
