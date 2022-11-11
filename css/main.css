@@ -16,7 +16,6 @@ body {
 body {
   background-color: rgb(240, 240, 240);
   height: 100%;
-  width: 100%;
 }
 
 html {
@@ -70,6 +69,7 @@ table {
   font-size: 0.9em;
   font-family: sans-serif;
   min-width: 400px;
+  width: 90%;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
@@ -209,10 +209,13 @@ table {
   margin-top: 1rem;
 }
 
-@media (min-width: 100px) {
+@media (min-width: 1750px) {
   .table-container {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -16,7 +16,7 @@ body {
 body {
 	background-color: rgb(240, 240, 240);
 	height: 100%;
-	width: 100%;
+	
 	
 	
 }
@@ -53,7 +53,6 @@ table {
 
 .table-container {
 	position: relative;
-	
 	overflow: visible;
 }
 
@@ -68,12 +67,12 @@ table {
 }
 
 .styled-table {
-	
 	border-collapse: collapse;
 	margin: 25px 0;
 	font-size: 0.9em;
 	font-family: sans-serif;
 	min-width: 400px;
+	width: 90%;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -181,8 +180,9 @@ table {
 }
 
 
-@media (min-width:100px) {
+@media (min-width:1750px) {
 	.table-container {
-		justify-content: flex-start;
+		display: flex;
+		justify-content: center;
 	}
 }
