@@ -49,6 +49,18 @@ body {
   position: relative;
 }
 
+.table-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .input {
   font-size: 16px;
   font-size: max(16px, 1em);

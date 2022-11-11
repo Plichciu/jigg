@@ -48,6 +48,12 @@ body {
 	position: relative;
 }
 
+.table-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .input {
 	font-size: 16px;
 	font-size: max(16px, 1em);
