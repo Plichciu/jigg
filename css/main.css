@@ -9,9 +9,14 @@
 
 html,
 body {
-  height: 100%;
   font-size: 1.6rem;
   font-family: "Exo 2", sans-serif;
+}
+
+body {
+  background-color: rgb(240, 240, 240);
+  height: 100%;
+  width: 100%;
 }
 
 html {
@@ -44,21 +49,9 @@ table {
   border-spacing: 0;
 }
 
-body {
-  background-color: rgb(240, 240, 240);
-  position: relative;
-}
-
 .table-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: relative;
+  overflow: visible;
 }
 
 .input {
@@ -214,4 +207,12 @@ body {
       flex-basis: 100%;
   text-align: center;
   margin-top: 1rem;
+}
+
+@media (min-width: 100px) {
+  .table-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }/*# sourceMappingURL=main.css.map */
